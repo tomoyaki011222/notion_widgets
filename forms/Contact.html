@@ -1,0 +1,152 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <style>
+        .contactheader {
+            color: #008080; 
+            font-family: Ubuntu, Verdana; 
+            font-size: 64px;
+        }
+        .horizontalline {
+            width: 80%;
+            margin-right: 20%; 
+            margin-top: 45px; 
+            margin-bottom: 100px; 
+            height: 0px; 
+            border: 0.4px solid #d6d6d6;
+                    }
+        .contactcontainer {
+            font-family: Ubuntu, verdana;
+            font-size: 16px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #f6f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label {
+  			color: #3d3d3d;
+            font-size: 18px;
+            padding: 12px 12px 12px 0;
+  			display: inline-block;
+		}
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            color: #3d3d3d;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #d6d6d6;
+            border-radius: 8px;
+            font-family: Verdana;
+            font-size: 15px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus,
+        textarea:focus {
+            border: 1px solid #008080;
+        }
+
+input[type="submit"] {
+            background-color: #008080;
+            color: #f6f4f4;
+            padding: 12px 32px;
+            border: 1px solid #008080;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 45px;
+        }
+        input[type="submit"]:hover {
+            background-color: #f6f4f4;
+            color: #008080;
+        }
+        
+        
+@media screen and (max-width: 600px) {
+  .contactheader {
+        font-size: 48px;
+        }
+  .horizontalline {
+    margin-top: 35px; 
+    margin-bottom: 80px; 
+  }
+  .contactcontainer {
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  label {
+    font-size: 16px;
+    padding: 10px 10px 10px 0;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+  input[type="submit"] {
+    padding: 10px 27px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 36px;
+  }
+}
+        
+        
+    </style>
+
+
+
+<div class="contactcontainer">
+    <p class="contactheader";>Let's talk!</p>
+  	<hr class="horizontalline";>
+    
+ 
+  
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd-opPbMaqR48akH8wEvu-Lguo2CurDfmm-d8phjcuiMYP03Q/formResponse" method="POST" id="mG61Hd" autocomplete="on">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="entry.1479618318" value="" required="">
+
+        <label for="tel">Phone number *</label>
+        <input type="tel" id="tel" name="entry.989049278" value="+30" required="">
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="entry.1841821298" value="" required="">
+
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="entry.1107626374" value="" required="">
+
+        <label for="message">Comments</label>
+        <textarea id="message" name="entry.1504301396" rows="5" value=""></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('mG61Hd');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Perform any validation if needed before proceeding
+            
+            // Redirect user to a new page (optional)
+            window.location.href = 'https://www.tomoyaki.com/thank-you'; // Redirect to your desired URL
+        });
+    });
+</script>
+
+</div>
