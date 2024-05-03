@@ -1,1 +1,325 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.banner {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  max-width: 2000px;
+  background-color: #008080;
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px; 
+  border-bottom-right-radius: 0px; 
+  border-bottom-left-radius: 0px;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.footer {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  max-width: 2000px;
+  background-color: #008080;
+  height: 160px;
+  border-top-left-radius: 0px; 
+  border-top-right-radius: 0px; 
+  border-bottom-right-radius: 20px; 
+  border-bottom-left-radius: 20px;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+  max-width: 400px;
+  max-height: auto;
+  min-width: 240px;
+  min-height: auto;
+}
+
+.box {
+  background-color: #f6f4f4;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 92%; 
+  max-width: 2000px;
+  border-top-left-radius: 0px; 
+  border-top-right-radius: 0px; 
+  border-bottom-right-radius: 0px; 
+  border-bottom-left-radius: 0px;
+  padding: 30px 0px;
+}
+
+.header {
+  font-family: Ubuntu, Verdana;
+  color: #008080;
+  font-size: 30px;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: auto;
+}
+
+.subheader {
+  font-family: Ubuntu, Verdana;
+  color: #3d3d3d;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.paragraph {
+  font-family: Ubuntu, verdana; 
+  color: #3d3d3d; 
+  font-size: 16px; 
+  text-align: left;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+
+.list {
+  font-family: Ubuntu, verdana; 
+  color: #3d3d3d; 
+  font-size: 16px; 
+  text-align: left;
+  margin-left: 48px;
+  margin-right: 32px;
+  padding: 6px 0px;
+}
+
+.lined {
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #cd5c5c;
+  border-style: solid; 
+  height: 0px;
+  border-width: 0.5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 80px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.flex-container > div {
+  background: transparent;
+  border-radius: 100%;
+  margin: 20px;
+  padding: 0px;
+  line-height: 60px;
+}
+
+.link {
+  display: inline-block;
+  background-color: #008080;
+  border: 2px solid #008080;
+  border-radius: 40px;
+  padding: 20px 40px;
+  color: #f6f4f4;
+  font-family: Ubuntu, Verdana;
+  font-size:24px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.link:hover {
+  background-color: #f6f4f4;
+  color: #008080;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .banner {
+  margin-top: 30px;
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px; 
+  border-bottom-right-radius: 0px; 
+  border-bottom-left-radius: 0px;
+  padding: 22.5px 0px;
+  }
+  .footer {
+    margin-bottom: 30px;
+    height: 120px;
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px; 
+    border-bottom-right-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    padding: 22.5px 0px;
+  }
+  .box {
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px; 
+    border-bottom-right-radius: 0px; 
+    border-bottom-left-radius: 0px;
+    padding: 22.5px 0px;
+  }
+
+  .header {
+    font-size: 22.5px;
+    margin-top: 22.5px;
+    margin-left: 16px;
+	margin-right: 16px;
+    margin-bottom: auto;
+  }
+
+  .subheader {
+    font-size: 15px;
+    margin-left: 16px;
+	margin-right: 16px;
+  }
+
+  .paragraph {
+    font-size: 12px; 
+    margin-left: 16px;
+	margin-right: 16px;
+    margin-bottom: 22.5px
+  }
+
+  .list {
+    font-size: 12px; 
+    margin-left: 30px;
+	margin-right: 16px;
+    padding: 4.5px 0px;
+  }
+
+  .lined {
+    width: 50%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    height: 0px;
+    border-width: 0.5px;
+  }
+
+  .flex-container {
+    min-height: 60px;
+  }
+  .flex-container > div {
+    border-radius: 100%;
+    margin: 15px;
+    padding: 0px;
+    line-height: 45px;
+  }
+  .link {
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-size:15px;
+  }
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="banner"> 
+  <a href="http://tomoyaki.com" target="_blank"><img class="logo" src="https://drive.google.com/thumbnail?id=1lbeLAHvFzJbTBGqKpGnzD2umtMJ95osY" alt="tomoyaki" loading="eager"></a>
+</div>
+
+<br style="line-height:6px;">
+
+<div class="box">
+  <p class="header"><b>Σύστημα online κρατήσεων</b></p>	
+  <p class="subheader"><b>Λάβετε κρατήσεις 24/7</b></p>	
+  <p class="paragraph">Σας αφορά αν για να προγραμματίσετε τα ραντεβού σας, απαντάτε σε κλήσεις πελατών:
+    <li class="list">Διακόπτοντας την εργασία σας</li>
+    <li class="list">Αφιερώνοντας προσωπικό ελεύθερο χρόνο</li>
+    <li class="list">Ή και τα δύο μαζί</li>
+  </p>
+  <br style="line-height: 80px;">
+  <a class="link" href="https://www.tomoyaki.com/online-appointment-scheduling">Δείτε περισσότερα</a>
+  <hr class="lined">  
+  
+  
+  
+
+  <p class="header"><b>Άμεση πρόσβαση</b></p>	
+  <p class="subheader"><b>Πλησιάστε τους πελάτες σας</b></p>	
+  <p class="paragraph">
+    <li class="list">Αποκτήστε ξεχωριστή ιστοσελίδα κρατήσεων ή/και ενσωματώστε την στην ιστοσελίδα που ήδη έχετε</li>
+    <li class="list">Προσθέστε συνδέσμους κράτησης στα social media & στο επιχειρηματικό σας προφίλ Google</li>
+    <li class="list">Λάβετε το δικό σας QR code κρατήσεων</li>
+  </p>
+  <a href="https://widget.easyweek.io/tomoyaki/74871/220535/date" target="_blank"><img style="border: 2px solid #b6aba5; border-radius: 20px; margin-top: 30px; margin-bottom: 20px;" src="https://drive.google.com/thumbnail?id=16DWrPnsmH2qlS-0aJ3atC2sHKbZwpx-j" alt="tomoyaki booking page" loading="eager"></a>
+  <hr class="lined">  
+
+
+
+
+  <p class="header"><b>Πλεονεκτήματα</b></p>	
+  <p class="subheader"><b>Για αποτελεσματικές κρατήσεις</b></p>	
+  <p class="paragraph">
+    <li class="list">Ορίστε τη διαθεσιμότητα σας</li>
+    <li class="list">Παρουσιάστε τις υπηρεσίες σας</li>
+    <li class="list">Αναδείξτε το brand σας</li>
+    <li class="list">Διαχειριστείτε τις κρατήσεις σας εν κινήσει</li>
+  </p>
+  <br style="line-height: 80px;">
+  <a class="link" href="www.tomoyaki.com">Υπολογισμός κόστους παραμετροποίησης</a>
+  <hr class="lined">  
+
+
+
+
+
+  <div class="flex-container">
+    <div>
+      <a href="tel:+302113331913" target="_blank"><img src="https://drive.google.com/thumbnail?id=1fAplOHUzYf44R1po7vcJQiA3w7lTv5Tq" alt="phone" height="48" style="padding: 0px; background:transparent;border: 0px solid #3d3d3d; border-radius:0px;"></a>
+    </div>
+    <div>
+      <a href="http://m.me/228262940380817" target="_blank"><img src="https://drive.google.com/thumbnail?id=1fAplOHUzYf44R1po7vcJQiA3w7lTv5Tq" alt="messenger" height="48" style="padding: 0px; background:transparent;border: 0px solid #3d3d3d; border-radius:0px;"></a>
+    </div>
+    <div>
+      <a href="http:tomoyaki.com" target="_blank"><img src="https://drive.google.com/thumbnail?id=1fAplOHUzYf44R1po7vcJQiA3w7lTv5Tq" alt="webite" height="48" style="padding: 0px; background:transparent;border: 0px solid #3d3d3d; border-radius:0px;"></a>
+    </div>
+    <div>
+      <a href="https://widget.easyweek.io/tomoyaki/74871/220535/date" target="_blank"><img src="https://drive.google.com/thumbnail?id=1fAplOHUzYf44R1po7vcJQiA3w7lTv5Tq" alt="meeting" height="48" style="padding: 0px; background:transparent;border: 0px solid #3d3d3d; border-radius:0px;"></a>
+    </div>
+    <div>
+      <a href="mailto:info@tomoyaki.com" target="_blank"><img src="https://drive.google.com/thumbnail?id=1fAplOHUzYf44R1po7vcJQiA3w7lTv5Tq" alt="email" height="48" style="padding: 0px; background:transparent;border: 0px solid #3d3d3d; border-radius:0px;"></a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<hr class="lined">  
+
+
+
+</div>
+
+<br style="line-height:6px;">
+
+<div class="footer">
+</div>
+
+</body>
+</html>
+
+
 
